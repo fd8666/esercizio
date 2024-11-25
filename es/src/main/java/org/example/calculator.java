@@ -8,7 +8,7 @@ public class calculator {
     }
 
     // Metodo per la sottrazione
-    public int subtract(int a, int b) {
+    public static int subtract(int a, int b) {
         return a - b;
     }
 
