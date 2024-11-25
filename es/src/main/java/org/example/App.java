@@ -16,10 +16,10 @@ public class App
         System.out.println("Benvenuto nella Calcolatrice!");
 
         System.out.print("Inserisci il primo numero: ");
-        double num1 = scanner.nextDouble();
+        int num1 = scanner.nextInt();
 
         System.out.print("Inserisci il secondo numero: ");
-        double num2 = scanner.nextDouble();
+        int num2 = scanner.nextInt();
 
         // Esegui tutte le operazioni
         System.out.println("\nRisultati delle operazioni:");
