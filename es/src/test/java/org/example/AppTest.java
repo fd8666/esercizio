@@ -43,6 +43,30 @@ public class AppTest {
         assertEquals(calculator.subtract(0, 0), 0);
         assertEquals(calculator.subtract(1000, 500), 500);
         assertEquals(calculator.subtract(-1000, 500), -1500);
-     
+
+    }
+
+    @Test
+    public void testMultiply() {
+        assertEquals(calculator.multiply(2, 3), 6);
+        assertEquals(calculator.multiply(-2, -3), 6);
+        assertEquals(calculator.multiply(0, 5), 0);
+        assertEquals(calculator.multiply(5, 0), 0);
+        assertEquals(calculator.multiply(1000, 2000), 2000000);
+        assertEquals(calculator.multiply(-1000, 2000), -2000000);
+
+    }
+
+    @Test
+    public void testDivide() {
+        assertEquals(calculator.divide(10, 2), 5);
+        assertEquals(calculator.divide(-10, 2), -5);
+        assertEquals(calculator.divide(10, -2), -5);
+        assertEquals(calculator.divide(-10, -2), 5);
+        assertEquals(calculator.divide(1000, 500), 2);
+        assertEquals(calculator.divide(7, 2), 3.5);
+        assertEquals(calculator.divide(-7, 2), -3.5);
+        assertEquals(calculator.divide(0, 5), 0);
+        assertThrows(ArithmeticException.class, () -> calculator.divide(5, 0)); // Test per la divisione per zero
     }
 }

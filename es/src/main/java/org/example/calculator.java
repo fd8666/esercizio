@@ -13,12 +13,12 @@ public class calculator {
     }
 
     // Metodo per la moltiplicazione
-    public int multiply(int a, int b) {
+    public static int multiply(int a, int b) {
         return a * b;
     }
 
     // Metodo per la divisione
-    public int divide(int a, int b) {
+    public static int divide(int a, int b) {
         if (b == 0) {
             throw new IllegalArgumentException("Errore: Divisione per zero non consentita!");
         }
